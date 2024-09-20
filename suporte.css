@@ -1,0 +1,12 @@
+*{
+    margin: 0 auto;
+    background-color: #121212;
+}
+.box-title{
+    background-color: #8224AE;
+    width: 33.33%;
+    height: 3px;  
+}
+.title{
+    font-size: 30px;
+}
