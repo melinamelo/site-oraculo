@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="assets/login.css">
 </head>
 <body>
-    
+    <header>
+        <img class="logo" src="assets/img/4_Sem_Título_20240912103141-removebg-preview.png" alt="logo">
+    </header>
+    <div class="login-container">
+        <form>
+            <h1>Login</h1>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" required placeholder="Email (ex: seuemail@gmail.com)">
+            </div>
+            <div class="form-group">
+                <label>Nome do Usuário</label>
+                <input type="text" required placeholder="Nome de usuário">
+            </div>
+            <div class="form-group">
+                <label for="email">Apelido (opcional)</label>
+                <input type="text" required placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="email">Data de nascimento</label>
+                <input type="text" required>
+            </div>
+            <button type="submit" class="login-btn">Entrar</button>
+            <div class="aviso-cadastro">
+                <span>Não possui uma conta? <span class="cadastrar-roxo"><a href="cadastro.html">Cadastre-se</a></span></span>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
