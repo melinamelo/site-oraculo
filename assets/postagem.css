@@ -49,7 +49,7 @@ label>img{
   margin-left: 0px;
 }
 
-nav{
+.nav-vertical{
     background-color: rgb(31, 31, 31);
     width:300px;  
     height: 100%; 
@@ -58,14 +58,14 @@ nav{
     transition: all 0.5s;
 }
 
-nav>ul{
+.nav-vertical>ul{
     position: relative;
     top:70px ;
     list-style: none;
     
 }
 
-nav>ul>li>a{
+.nav-vertical>ul>li>a{
     display: block;
     padding:10 20;
     color:#FFF;
@@ -74,7 +74,7 @@ nav>ul>li>a{
     margin-bottom: 15px;
 }
 
-nav>ul>li>a:hover{
+.nav-vertical>ul>li>a:hover{
     background-color: rgb(18, 18, 18);
     color:#8224AE;
 }
@@ -151,122 +151,155 @@ nav>ul>li>a:hover{
     font-weight: bold;
     font-family: "Fredoka";
 }
-h2{
-    margin-top: 100px;
-    color: #666666;
-    align-self: center;
-    font-family: "Fredoka";
-    margin-left: 41.5%;
-}
-main{
+.principal{
     width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-.box-comunidades{
-    display: flex;
-    width: 95%;
-    align-self: center;
-    height: 130px;
-    margin-left: 2.5%;
-    margin-top: 60px;
-    column-gap: 30px;
-}
-.comunidades{
-    border: 2px solid #424242;
-    width: 23.75%;
-    border-radius: 10px;
-    align-items: center;
     text-align: center;
+    margin-top: 50px;
 }
-.icone-comunidade{
-    width: 120px;
-    margin-top: -60px;
-}
-.icone-comunidade1{
-    width: 120px;
-    margin-top: -60px;
-}
-.comunidade-name{
-    color: #8224AE;
-    display: block;
-    font-family: "Fredoka";
-    font-size: 20px;
-}
-h3{
-    color: #8C8C8C;
-    font-size: 18px;
-    font-family: "Fredoka";
-    margin-left: 2.5%;
-    margin-top: 100px;
-}
-.box-novidades{
-    display: flex;  
-    width: 95%;
-    margin-left: 2.5%;
-    column-gap: 30px;
-    justify-content: space-between;
-    margin-bottom: 100px;
-}
-.novidade{
-    background-color: #292929;
-    width: 30%;
-    height: 350px;
-    border-radius: 10px;
-}
-.img-novidade{
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-}
-.novidade span{
-    font-size: 14px;
-    display: block;
-    margin-bottom: 10px;
-    width: 90%;
-    text-align: justify;
-    margin-left: 5%;
-    margin-top: 10px;
-    font-family: "Vietnam";
-    color: #787878
-}
-.titulo-novidade{
-    font-size: 15px;
-    display: block;
-    margin-bottom: 10px;
-    width: 90%;
-    text-align: justify;
-    margin-left: 5%;
-    margin-top: 5px;
-    font-family: "Vietnam";
-    color: white;
-}
-.rodape{
-    background-color: #000000;
+.titulo{
     display: flex;
     width: 100%;
+    text-align: center;
     justify-content: space-between;
+    align-items: center;
 }
-.info-rodape{
-    width:20%;
-    justify-content: center;
+.linha-pag{
+    background-color:#8224AE;
+    height: 1px;
+    width: 40%;
+}
+h2{
+    color: #7C25AE;
+    font-family: "Fredoka";
+    font-size: 22px;
+}
+.box-tudo{
+    display: flex;
+    margin-top: 50px;
+}
+.box-info{
+    background-color: rgb(0, 0, 0);
+    width: 20%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    border-radius: 10px;
 }
-.logo-rodape{
-    width: 70%;
-    margin-left: 10%;
+.timeline{
+    width: 40%;
+    margin: 0 auto;
+
 }
-.link-rodape{
-    font-size: 15px;
-    display: block;
+.link-postagens>i{
+    margin-left: 15%;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.link-postagens{
+    margin-top: 20px;
     margin-bottom: 10px;
-    margin-top: 5px;
+    font-size: 17px;
+    color: #646464;
     font-family: "Vietnam";
-    color: #8d8d8d;
-    justify-content: center;
-    align-items: center;
+    font-weight: bold;
 }
-i{
+.link-info{
+    margin-top: 250px;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #646464;
+    margin-left: 15%;
+
+    font-family: "Vietnam";
+}
+.info{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.comunidade-info{
+    margin-top: 180px;
+    margin-bottom: 30px;
+}
+.sub-comunidade select {
+    margin-top: 40px;
+    width: 210px;
+    background: none;
+    color: #646464;
+    border: none;
+    border-radius: 2px;
+    padding: 9px 9px;
+    background-color: rgb(0, 0, 0);
+    font-family: "Vietnam";
+    font-size: 17px;
+    font-weight: bold;
+}
+.header-nav option {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    font-weight: bold;  
+}
+.box-info2{
+    background-color: rgb(0, 0, 0);
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+.conta{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    margin-left: 25px;
+}
+.perfil-post{
+    border-radius: 50%;
+    width: 60px;
+}
+.conta>span{
+    color: #787878;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: "Vietnam";
+}
+.publicacao{
+    width: 90%;
+    background-color: #1F1F1F;
+    margin-top: 20px;
+    height: 50px;
+    color:#acacac;
+    font-family: "Vietnam";
+    font-size: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center ;
+    padding: 10px;
+    margin-left: 25px;
+}
+.img-post>img{
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.icons-post{
+    color: #FFF;
+    font-size: 30px;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    margin-left: 25px;
+    margin-top: 20px;
+    display: flex;
+}
+.icons-post>i{
     margin-right: 10px;
+}
+.postagem{
+    margin-bottom: 100px;
 }
