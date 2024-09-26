@@ -15,7 +15,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 0, 0, 0);
-    border-bottom: 2px solid rgb(62, 17, 73);
+    border-bottom: 2px solid rgba(171, 3, 193, 0.234);
 }
 .logo{
     width: 180px;
@@ -23,7 +23,7 @@ header{
 }
 body {
     /* background-image: url("img/fundo-degrade02.jpg"); */
-    background: linear-gradient(45deg, #500373, #631386, #731e98, #7a04ac);
+    background: linear-gradient(180deg, #000000, #270137, #891fb7, #9345b4);
     background-size: 250% 250%;
     animation: colors 8s ease infinite;
 }
@@ -40,9 +40,9 @@ body {
 }
 form{
     width: 30%;
-    height: 400px;
+    height: 350px;
     padding: 30px;
-    background-color: rgba(32, 32, 32, 0.214);
+    background-color: rgba(32, 32, 32, 0.23);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,11 +51,9 @@ form{
     margin-top: 100px;
 
 }
-form h1{
-    margin-bottom: 30px;
-    color: #34004a;
-    font-size: 20px;
-}
+input::placeholder {
+    color: rgb(53, 53, 53);
+  }
 .form-group {
     width: 100%;
     margin-bottom: 15px;
@@ -104,4 +102,8 @@ form h1{
 .cadastrar-roxo a{
     color: #cc55ff;
     text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
 }

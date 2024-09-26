@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Cadastro</title>
-    <link rel="stylesheet" href="assets/login.css">
+    <link rel="stylesheet" href="assets/cadastro.css">
 </head>
+
 <body>
     <header>
         <img class="logo" src="assets/img/4_Sem_Título_20240912103141-removebg-preview.png" alt="logo">
     </header>
-    <div class="login-container">
-        <form>
-            <h1>Login</h1>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" required placeholder="Email (ex: seuemail@gmail.com)">
-            </div>
-            <div class="form-group">
-                <label>Nome do Usuário</label>
-                <input type="text" required placeholder="Nome de usuário">
-            </div>
-            <div class="form-group">
-                <label for="email">Apelido (opcional)</label>
-                <input type="text" required placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="email">Data de nascimento</label>
-                <input type="text" required>
-            </div>
-            <button type="submit" class="login-btn">Entrar</button>
-            <div class="aviso-cadastro">
-                <span>Não possui uma conta? <span class="cadastrar-roxo"><a href="cadastro.html">Cadastre-se</a></span></span>
-            </div>
+    <div class="cadastro-container">
+        <div class="form-left">
+            <form>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required placeholder="Email (ex: seuemail@gmail.com)">
+                </div>
+                <div class="form-group">
+                    <label>Nome do Usuário</label>
+                    <input type="text" required placeholder="Nome de usuário">
+                </div>
+                <div class="form-group">
+                    <label>Apelido (opcional)</label>
+                    <input type="text" required placeholder="Escolha um apelido">
+                </div>
+            </form>
+        </div>
+        <div class="form-right">
+            <form>
+                <div class="form-group">
+                    <label>Data de nascimento</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" required placeholder="Digite sua senha">
+                </div>
+                <div class="form-group">
+                    <label>Confirmar senha</label>
+                    <input type="password" required  placeholder="Digite sua senha novamente">
+                </div>
+            </form>
+        </div>
         </form>
     </div>
+    <a href="login.html"><button type="submit" class="cadastro-btn">Cadastrar</button></a>
+    <div class="check">
+        <input type="checkbox" checked />
+        <label class="label">Li e concordo com os <span class="text-roxo">termos de serviço</span> e a <span class="text-roxo">política de privacidade</span> do Oráculo. </label>
+      </div>
 </body>
+
 </html>
