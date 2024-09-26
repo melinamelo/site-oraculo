@@ -19,6 +19,10 @@ h1 {
     font-family: 'Fredoka';
     src: url('fonts/FredokaOne-Regular.ttf');
 }
+@font-face {
+    font-family: 'Vietnam';
+    src: url('fonts/BeVietnamPro-ExtraLight.ttf');
+}
 body{
     background-color: #121212;
 }
@@ -87,10 +91,11 @@ nav>ul>li>a:hover{
     width: 100%;
     height: 1px;
     background-color: #8B8B8B;
-    margin-top: 330px;
+    margin-top: 390px;
 }
 .account{
     display: flex;
+    margin-top: 10px;
 }
 .perfil{
     width: 50px;
@@ -152,21 +157,117 @@ h2{
     color: #666666;
     align-self: center;
     font-family: "Fredoka";
-    
+    margin-left: 41.5%;
 }
 main{
     width: 100%;
     align-items: center;
-    text-align: center;
     justify-content: center;
 }
 .box-comunidades{
     display: flex;
-    background-color: #8224AE;
-    width: 90%;
+    width: 95%;
     align-self: center;
-    height: 200px;
+    height: 130px;
+    margin-left: 2.5%;
+    margin-top: 60px;
+    column-gap: 30px;
 }
 .comunidades{
-    border: 1px solid #666666;
+    border: 2px solid #424242;
+    width: 23.75%;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+.icone-comunidade{
+    width: 120px;
+    margin-top: -60px;
+}
+.icone-comunidade1{
+    width: 120px;
+    margin-top: -60px;
+}
+.comunidade-name{
+    color: #8224AE;
+    display: block;
+    font-family: "Fredoka";
+    font-size: 20px;
+}
+h3{
+    color: #8C8C8C;
+    font-size: 18px;
+    font-family: "Fredoka";
+    margin-left: 2.5%;
+    margin-top: 100px;
+}
+.box-novidades{
+    display: flex;  
+    width: 95%;
+    margin-left: 2.5%;
+    column-gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.novidade{
+    background-color: #292929;
+    width: 30%;
+    height: 350px;
+    border-radius: 10px;
+}
+.img-novidade{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.novidade span{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+    width: 90%;
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 10px;
+    font-family: "Vietnam";
+    color: #787878
+}
+.titulo-novidade{
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+    width: 90%;
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 5px;
+    font-family: "Vietnam";
+    color: white;
+}
+.rodape{
+    background-color: #000000;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.info-rodape{
+    width:20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.logo-rodape{
+    width: 70%;
+    margin-left: 10%;
+}
+.link-rodape{
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: "Vietnam";
+    color: #8d8d8d;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    margin-right: 10px;
 }
