@@ -1,6 +1,5 @@
 *{
     margin: 0 auto;
-<<<<<<< HEAD
   
 }
 body{
@@ -14,16 +13,12 @@ body{
 @font-face {
     font-family: 'Vietnam';
     src: url('fonts/BeVietnamPro-ExtraLight.ttf');
-=======
-    background-color: #121212;
->>>>>>> d88e0305dbd2f8154099b10af3459ba2283f82fe
 }
 .box-title{
     background-color: #8224AE;
     width: 33.33%;
     height: 3px;  
 }
-<<<<<<< HEAD
 
 .box-title-total{
     width: 100%;
@@ -151,8 +146,4 @@ body{
 
 .info-2 span i {
     margin-right: 15px; 
-=======
-.title{
-    font-size: 30px;
->>>>>>> d88e0305dbd2f8154099b10af3459ba2283f82fe
 }

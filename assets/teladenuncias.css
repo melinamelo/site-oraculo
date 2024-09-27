@@ -42,7 +42,6 @@ body {
     align-items: center;
     text-align: center;
     font-size: 30px;
-    font-family: 'Fredoka';
     color: #8224AE;
 }
 
@@ -71,13 +70,12 @@ body {
     height: 800px;
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
-    flex-flow: row;
-
+    /* flex-wrap: nowrap;
+    flex-flow: row; */
 }
 
 .box1 {
-    width: 65%;
+    width: 60%;
     height: 100%;
 }
 
@@ -90,15 +88,11 @@ body {
 .box2 {
     width: 35%;
     height: 30%;
+    margin-right: 30px;
 }
 
 .form-title h2 {
     margin-top: 70px;
-    font-family: "Fredoka";
-}
-
-.pergunta h2 {
-    font-family: "Fredoka";
 }
 
 .info p {
@@ -134,7 +128,7 @@ body {
     height: 40px;
     width: 400px;
     border-bottom: 3px solid #8224AE;
-    background-color: #4A4A4A;
+    background-color: rgba(112, 112, 112, 0.434);
     border-radius: 7px;
     border-top: none;
     border-right: none;
@@ -157,7 +151,6 @@ body {
     background-color: #8224AE;
     margin-top: 10px;
     border-radius: 7px;
-    font-family: "Fredoka";
     border: none;
     color: white;
 }
@@ -173,7 +166,6 @@ body {
 
 .importante h3 {
     text-align: center;
-    font-family: "Fredoka";
 }
 
 .importante p::before {

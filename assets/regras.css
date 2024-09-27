@@ -1,9 +1,22 @@
+body,
+html,
+main,
+figure,
+section,
+a,
+img,
+div,
+p,
+h1 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+    vertical-align: baseline;
+}
 *{
     margin: 0 auto;
-  
-}
-body{
-    background-color: #121212;
     font-family: 'Vietnam';
 }
 @font-face {
@@ -14,12 +27,144 @@ body{
     font-family: 'Vietnam';
     src: url('fonts/BeVietnamPro-ExtraLight.ttf');
 }
-.box-title{
-    background-color: #8224AE;
-    width: 33.33%;
-    height: 3px;  
+body{
+    background-color: #292b34;
+}
+input[type="checkbox"]{
+    display:none;
+    margin-top: 20px;
 }
 
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(300px);
+}
+
+input[type="checkbox"]:checked ~ label>img{
+    transform: translateX(250px);
+
+}
+
+label>img{
+  width: 40px;  
+  position: absolute;
+  z-index: 1;
+  transition: all 0.5s;
+  margin-top: 25px;
+  margin-left: 0px;
+}
+
+nav{
+    background-color: #292929;
+    width:300px;  
+    height: 100%; 
+    position: absolute;  
+    left: -300px;
+    transition: all 0.5s;
+}
+
+nav>ul{
+    position: relative;
+    top:70px ;
+    list-style: none;
+    
+}
+
+nav>ul>li>a{
+    display: block;
+    padding:10 20;
+    color:#FFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+nav>ul>li>a:hover{
+    background-color: #292929;
+    color:#8224AE;
+}
+.logo{
+    width:200px;
+    height: 100px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.img-logoFooter img{
+    width: 120px;
+    background-color: #1f1f29;
+}
+.img-logo{
+    width:100%
+}
+.linha{
+    width: 100%;
+    height: 1px;
+    background-color: #8B8B8B;
+    margin-top: 390px;
+}
+.account{
+    display: flex;
+    margin-top: 10px;
+}
+.perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.account span{
+    color: #FFF;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1.5px solid #505050;
+}
+.logo-principal{
+    width: 12.5%;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.img-principal{
+    width:100%;
+}
+.lado-direito{
+    float: right;
+    width: 83%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+} 
+.conteudo-header{
+    margin-right: 20px;
+    display: flex;
+    column-gap: 50px;
+    font-family: sans-serif;
+}
+.search{
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3b3e4f;
+}
+.link{
+    text-decoration: none;
+    color: #8224AE;
+    font-weight: bold;
+}
+
+.box-title{
+    background-color: #8224AE;
+    width: 40%;
+    height: 2px;  
+}
 .box-title-total{
     width: 100%;
     height: 3px;
@@ -27,6 +172,8 @@ body{
     flex-direction: row;
     color:#8224AE;
     font-size: 22px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 .title{
     width: 33.33%;
@@ -36,7 +183,6 @@ body{
     align-items: center; 
     text-align: center; 
     font-size: 30px;
-    font-family: "Fredoka";
 
 }
 .text-body{
@@ -46,10 +192,9 @@ body{
 .title-body{
     color:#8224AE;
    
-   
 }
 .title-body li {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 .all-text-body{
     text-align: justify;
@@ -57,48 +202,81 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-   
 }
 
 .main-info{
     color: #737373;
-    border-top: 3px solid #8224AE;
+    background-color: #1f1f29;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 10px;
-    background-color: #1F1F29;
 }
 .info{
+    width: 300px;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    background:none
 }
 .info-2{
     display: flex;
     flex-direction: column;
-    padding: 15px;  
-}
-.img-logo img{
-    width: 120px;
-    height: 120px;
+    padding: 15px;
+    background:none
+
 }
 
 .info span{
+    font-size: 12px;
     margin-top: 5px;
+    background-color: #1f1f29;
 }
 
 .info-2 span {
+    font-size: 12px;
     display: flex;
     align-items: center; 
-    text-align: left; 
-    margin-top: 10px; 
+    margin-top: 10px;
+    background-color: #1f1f29; 
 }
 
 .info-2 span i {
-    margin-right: 15px; 
+    margin-right: 12px; 
 }
+.collapsible {
+    background-color: #73018d;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 150px;
 
-
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #9b49c1;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    margin-left: 100px;
+    background-color: #292b34;
+    margin-bottom: 20px;
+  }
+  .text-adv{
+    margin-left: 70px;
+    color: red;
+  }
+  i{
+    background: none;
+    float: right;
+  }
