@@ -27,7 +27,7 @@ html{
     src: url('fonts/BeVietnamPro-ExtraLight.ttf');
 }
 body{
-    background-color: #2d2f3b;
+    background-color: #121212;
 }
 input[type="checkbox"]{
     display:none;
@@ -119,7 +119,7 @@ label>img{
     width: 100%;
     height: 100px;
     border-bottom: 1.5px solid #383838;
-    background-color: #2d2f3b;
+    background-color: #121212;
     z-index: 3;
 }
 .logo-principal{
@@ -149,7 +149,7 @@ label>img{
     padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: #3b3e4f;
+    background-color: #2d2d2d;
 }
 .link{
     text-decoration: none;
@@ -168,7 +168,7 @@ label>img{
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    background-color: #2d2f3b;
+    background-color: #121212;
     height: 100px;
     position: relative;
 
@@ -188,7 +188,7 @@ h2{
     margin-top: 50px;
 }
 .box-info{
-    background-color: #262932;
+    background-color: rgb(0, 0, 0);
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -202,7 +202,7 @@ h2{
     z-index: 1;
 }
 .box-info2{
-    background-color: #262932;
+    background-color: rgb(0, 0, 0);
     width: 20%;
     display: flex;
     justify-content: center;
@@ -226,7 +226,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 17px;
-    color: #939393;
+    color: #646464;
     font-family: "Vietnam";
     font-weight: bold;
 }
@@ -234,7 +234,7 @@ h2{
     margin-top: 250px;
     margin-top: 20px;
     font-size: 17px;
-    color: #c5c5c5;
+    color: #646464;
     margin-left: 15%;
 
     font-family: "Vietnam";
@@ -254,80 +254,39 @@ h2{
     margin-top: 40px;
     width: 210px;
     background: none;
-    color: #939393;
+    color: #646464;
     border: none;
     border-radius: 2px;
     padding: 9px 9px;
-    background-color: #262932;
+    background-color: rgb(0, 0, 0);
     font-family: "Vietnam";
     font-size: 17px;
     font-weight: bold;
 }
 .header-nav option {
-    background-color: #262932;
+    background-color: rgb(0, 0, 0);
     color: white;
     border: none;
     font-weight: bold;  
 }
 
-
-
-.conta{
-    display: flex;
-    margin-top: 40px;
-    align-items: center;
-    margin-left: 25px;
-}
-.perfil-post{
-    border-radius: 50%;
-    width: 60px;
-}
-.conta>span{
-    color: #939393;
-    font-weight: bold;
-    margin-left: 10px;
-    font-family: "Vietnam";
-}
-.publicacao{
-    width: 90%;
-    background-color: #3b404f;
-    margin-top: 20px;
-    height: 50px;
-    color:#ffffff;
-    font-family: "Vietnam";
-    font-size: 15px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center ;
-    padding: 10px;
-    margin-left: 25px;
-}
-.img-post>img{
-    width: 90%;
-    border-radius: 15px;
-    margin-top: 20px;
-}
-
-.icons-post{
-    color: #FFF;
-    font-size: 30px;
-    align-items: center;
-    justify-content: left;
-    display: flex;
-    margin-left: 25px;
-    margin-top: 20px;
-    display: flex;
-    margin-bottom: 40px;
-}
-.icons-post>i{
-    margin-right: 10px;
-}
-.postagem{
-    margin-bottom: 100px;
-    border-bottom: 1px solid #939393;
-}
-.sticky{
-    position: fixed;
-    top: 0;
+.caixa{
     width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.info-caixa{
+    width: 30%;
+    height: 55px;
+    border-radius: 7px;
+    border: 2px solid #7C25AE;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.info-caixa span{
+    font-family: "Vietnam";
+    color: white;
 }
