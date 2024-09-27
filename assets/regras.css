@@ -3,7 +3,7 @@
   
 }
 body{
-    background-color: #121212;
+    background-color: #2D2F3B;
     font-family: 'Vietnam';
 }
 @font-face {
@@ -14,30 +14,153 @@ body{
     font-family: 'Vietnam';
     src: url('fonts/BeVietnamPro-ExtraLight.ttf');
 }
-.box-title{
-    background-color: #8224AE;
-    width: 33.33%;
-    height: 3px;  
+
+
+input[type="checkbox"]{
+    display:none;
+    margin-top: 20px;
 }
 
-.box-title-total{
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(300px);
+}
+
+input[type="checkbox"]:checked ~ label>img{
+    transform: translateX(250px);
+
+}
+
+label>img{
+  width: 40px;  
+  position: absolute;
+  transition: all 0.5s;
+  margin-top: 25px;
+  margin-left: 0px;
+  z-index: 5;
+}
+
+.nav-vertical{
+    background-color: rgb(31, 31, 31);
+    width:300px;  
+    height: 100%; 
+    position: absolute;  
+    left: -300px;
+    transition: all 0.5s;
+    z-index: 4;
+}
+
+.nav-vertical>ul{
+    position: relative;
+    top:70px ;
+    list-style: none;
+    
+}
+
+.nav-vertical>ul>li>a{
+    display: block;
+    padding:10 20;
+    color:#FFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+.nav-vertical>ul>li>a:hover{
+    background-color: #2D2F3B;
+    color:#8224AE;
+}
+.logo{
+    width:200px;
+    height: 100px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.img-logo{
+    width:100%
+}
+.linha{
     width: 100%;
-    height: 3px;
+    height: 1px;
+    background-color: #8B8B8B;
+    margin-top: 380px;
+}
+.account{
+    display: flex;
+}
+.perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.account span{
+    color: #FFF;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1.5px solid #383838;
+    background-color: #2D2F3B;
+    z-index: 3;
+}
+.logo-principal{
+    width: 12.5%;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.img-principal{
+    width:100%;
+}
+.lado-direito{
+    float: right;
+    width: 83%;
     display: flex;
     flex-direction: row;
-    color:#8224AE;
-    font-size: 22px;
+    justify-content: right;
+    align-items: center;
+} 
+.conteudo-header{
+    margin-right: 20px;
+    display: flex;
+    column-gap: 50px;
+    font-family: sans-serif;
 }
-.title{
-    width: 33.33%;
-    height: 10px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center; 
-    font-size: 30px;
+.search{
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3b3e4f;
+}
+.link{
+    text-decoration: none;
+    color: #8224AE;
+    font-weight: bold;
     font-family: "Fredoka";
+}
+.titulo{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2D2F3B;
+    height: 100px;
+    position: relative;
+    color: #8224AE;
 
+
+}
+.linha-pag{
+    height:1px;
+    width: 40%;
+    background-color: #8224AE;
 }
 .text-body{
     color:white;
@@ -62,7 +185,6 @@ body{
 
 .main-info{
     color: #737373;
-    border-top: 3px solid #8224AE;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -81,9 +203,8 @@ body{
     flex-direction: column;
     padding: 15px;  
 }
-.img-logo img{
+.img-logoFooter img{
     width: 120px;
-    height: 120px;
 }
 
 .info span{
