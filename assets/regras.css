@@ -1,0 +1,104 @@
+*{
+    margin: 0 auto;
+  
+}
+body{
+    background-color: #121212;
+    font-family: 'Vietnam';
+}
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/FredokaOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Vietnam';
+    src: url('fonts/BeVietnamPro-ExtraLight.ttf');
+}
+.box-title{
+    background-color: #8224AE;
+    width: 33.33%;
+    height: 3px;  
+}
+
+.box-title-total{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    flex-direction: row;
+    color:#8224AE;
+    font-size: 22px;
+}
+.title{
+    width: 33.33%;
+    height: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    font-size: 30px;
+    font-family: "Fredoka";
+
+}
+.text-body{
+    color:white;
+    margin-top: 15px;
+}
+.title-body{
+    color:#8224AE;
+   
+   
+}
+.title-body li {
+    margin-bottom: 20px; 
+}
+.all-text-body{
+    text-align: justify;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+
+.main-info{
+    color: #737373;
+    border-top: 3px solid #8224AE;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #1F1F29;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.info-2{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;  
+}
+.img-logo img{
+    width: 120px;
+    height: 120px;
+}
+
+.info span{
+    margin-top: 5px;
+}
+
+.info-2 span {
+    display: flex;
+    align-items: center; 
+    text-align: left; 
+    margin-top: 10px; 
+}
+
+.info-2 span i {
+    margin-right: 15px; 
+}
+
+

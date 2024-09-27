@@ -1,0 +1,149 @@
+*{
+    margin: 0 auto;
+  
+}
+body{
+    background-color: #2D2F3B;
+    font-family: 'Vietnam';
+}
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/FredokaOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Vietnam';
+    src: url('fonts/BeVietnamPro-ExtraLight.ttf');
+}
+.box-title{
+    background-color: #8224AE;
+    width: 33.33%;
+    height: 3px;  
+}
+
+.box-title-total{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    flex-direction: row;
+    color:#8224AE;
+    font-size: 22px;
+}
+.title{
+    width: 33.33%;
+    height: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    font-size: 30px;
+    font-family: 'Fredoka';
+}
+.text-body{
+    color:white;
+    margin-top: 15px;
+}
+.all-text-body{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.title-body-box{
+    font-size: 25px;
+    color:white;
+    margin-top: 12px;
+
+}
+.title-body{
+    color:#8224AE;
+}
+.title-text{
+    color:#8224AE;
+    font-size: 18px;
+} 
+.box-text{
+    margin-top: 12px;
+}
+.text-body-box{
+    color:white;
+}
+.linha{
+    width: 100%;
+    height: 2px;
+    background-color: #6B6B6B;
+    margin-top: 20px;
+}
+.info-title {
+    font-size: 25px;
+    color: white;
+    text-align: left; /* Alinha o título à esquerda */
+}
+
+.info-text {
+    color: white;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.text-info {
+    margin-top: 12px;
+    width: 80%;  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Garante que os itens dentro do flex-container fiquem à esquerda */
+}
+
+.box-info-title {
+    width: 100%; /* Garante que ocupe 100% da largura e permita o alinhamento correto */
+}
+
+.box-info-text {
+    margin-top: 12px;
+    width: 100%; /* Garante que ocupe 100% da largura e permita o alinhamento correto */
+}
+.contato {
+    width: 80%;  
+    text-align: left; /* Alinha o conteúdo à esquerda */
+    margin-top: 12px;
+   
+}
+
+
+.main-info{
+    color: #737373;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #1F1F29;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.info-2{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;  
+}
+.img-logo img{
+    width: 120px;
+    height: 120px;
+}
+
+.info span{
+    margin-top: 5px;
+}
+
+.info-2 span {
+    display: flex;
+    align-items: center; 
+    text-align: left; 
+    margin-top: 10px; 
+}
+
+.info-2 span i {
+    margin-right: 15px; 
+}

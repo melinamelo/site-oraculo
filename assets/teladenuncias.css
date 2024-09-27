@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/FredokaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Vietnam';
+    src: url('fonts/BeVietnamPro-ExtraLight.ttf');
+}
+
+* {
+    margin: 0 auto;
+
+}
+
+body {
+    background-color: #2D2F3B;
+    font-family: "Vietnam";
+    color: white;
+}
+
+.box-title {
+    background-color: #8224AE;
+    width: 33.33%;
+    height: 3px;
+}
+
+.box-title-total {
+    width: 100%;
+    height: 3px;
+    display: flex;
+    flex-direction: row;
+    color: #8224AE;
+    font-size: 22px;
+}
+
+.title {
+    width: 33.33%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Fredoka';
+    color: #8224AE;
+}
+
+.texto-1 {
+    width: 80%;
+    height: 100px;
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.texto-2 {
+    width: 80%;
+    height: 150px;
+    text-align: justify;
+}
+
+.texto-3 {
+    width: 80%;
+    height: 100px;
+    text-align: justify;
+}
+
+.box-total {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-flow: row;
+
+}
+
+.box1 {
+    width: 65%;
+    height: 100%;
+}
+
+.form-1 {
+    width: 70%;
+    height: 100px;
+    text-align: justify;
+}
+
+.box2 {
+    width: 35%;
+    height: 30%;
+}
+
+.form-title h2 {
+    margin-top: 70px;
+    font-family: "Fredoka";
+}
+
+.pergunta h2 {
+    font-family: "Fredoka";
+}
+
+.info p {
+    margin-top: 14px;
+}
+
+.form-title {
+    margin-top: 10px;
+}
+
+.perg span {
+    color: #8224AE;
+    font-size: 20px;
+}
+
+.perg {
+    margin-bottom: 14px;
+}
+
+.check-box {
+    font-size: 16px;
+}
+
+.input-1 {
+    margin-top: 12px;
+}
+
+.check-box div {
+    font-size: 16px;
+}
+
+.input input {
+    height: 40px;
+    width: 400px;
+    border-bottom: 3px solid #8224AE;
+    background-color: #4A4A4A;
+    border-radius: 7px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+}
+
+.text-input {
+    margin-top: 10px;
+}
+
+.input {
+    margin-top: 13px;
+    margin-bottom: 12px;
+}
+
+.button {
+    height: 40px;
+    width: 400px;
+    background-color: #8224AE;
+    margin-top: 10px;
+    border-radius: 7px;
+    font-family: "Fredoka";
+    border: none;
+    color: white;
+}
+
+.importante {
+    width: 500px;
+    background-color: #232831;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 7px;
+
+}
+
+.importante h3 {
+    text-align: center;
+    font-family: "Fredoka";
+}
+
+.importante p::before {
+    content: "• ";
+}
+
+.importante p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.main-info {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #1F1F29;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.info-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.img-logo img {
+    width: 120px;
+    height: 120px;
+}
+
+.info-box span {
+    margin-top: 5px;
+    color: #737373;
+}
+
+.info-2 span {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 10px;
+    color: #737373;
+}
+
+.info-2 span i {
+    margin-right: 15px;
+    color: #737373;
+}
