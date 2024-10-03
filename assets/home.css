@@ -15,6 +15,9 @@ h1 {
     font-size: 100%;
     vertical-align: baseline;
 }
+*{
+    font-family: "Vietnam";
+}
 @font-face {
     font-family: 'Fredoka';
     src: url('fonts/FredokaOne-Regular.ttf');
@@ -23,6 +26,10 @@ h1 {
     font-family: 'Vietnam';
     src: url('fonts/BeVietnamPro-ExtraLight.ttf');
 }
+@font-face{
+    font-family: "fjalla"; src: url("./fonts/FjallaOne-Regular.ttf")
+}
+
 body{
     background-color: #2d2f3b;
 }
@@ -149,13 +156,11 @@ nav>ul>li>a:hover{
     text-decoration: none;
     color: #8224AE;
     font-weight: bold;
-    font-family: "Fredoka";
 }
 h2{
     margin-top: 100px;
     color: #8224AE  ;
     align-self: center;
-    font-family: "Fredoka";
     margin-left: 41.5%;
 }
 main{
@@ -190,13 +195,11 @@ main{
 .comunidade-name{
     color: #8224AE;
     display: block;
-    font-family: "Fredoka";
     font-size: 20px;
 }
 h3{
     color: #8C8C8C;
     font-size: 18px;
-    font-family: "Fredoka";
     margin-left: 2.5%;
     margin-top: 100px;
 }
@@ -226,7 +229,6 @@ h3{
     text-align: justify;
     margin-left: 5%;
     margin-top: 10px;
-    font-family: "Vietnam";
     color: #787878
 }
 .titulo-novidade{
@@ -237,7 +239,6 @@ h3{
     text-align: justify;
     margin-left: 5%;
     margin-top: 5px;
-    font-family: "Vietnam";
     color: white;
 }
 .rodape{
@@ -262,11 +263,94 @@ h3{
     display: block;
     margin-bottom: 10px;
     margin-top: 5px;
-    font-family: "Vietnam";
     color: #8d8d8d;
     justify-content: center;
     align-items: center;
 }
 i{
     margin-right: 10px;
+}
+/* Início do parallax */
+
+.parallax{
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img01{
+    background-image: url(img/img01-parallax.jpg);
+    opacity: 0.5;
+}
+#img02{
+    background-image: url(img/img02222-parallax.jpg);
+    opacity: 0.5;
+}
+#img03{
+    background-image: url(img/img03333-parallax.jpg);
+    opacity: 0.5;
+}
+#img04{
+    background-image: url(img/img03-parallax.jpg);
+    opacity: 0.5;
+}
+.text-parallax{
+    width: 100%;
+    height: 150px;
+    background-color: #404352;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.text-parallax p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    padding: 50px;
+}
+.text-parallax span{
+    font-size: 30px;
+    color: white;
+}
+#img{
+    background-color: #2d2f3b;
+    /* opacity: 0.5; */
+}
+.parallax01{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parallax01 span{
+    width: 28%;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: white;
+    font-family: "fjalla";
+}
+.text-parallax01{
+    width: 100%;
+    height: 150px;
+    background-color: #1f1f29;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.text-parallax01 span{
+    font-size: 30px;
+    color: #8224AE;
+}
+#spanWelcome{
+    width: 30%;
+    height: 43px;
+    border: 2px solid #8824b7;
+    font-family: "fjalla";
 }
