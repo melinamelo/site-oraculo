@@ -1,4 +1,13 @@
+@font-face {
+    font-family: 'Vietnam';
+    src: url('/chatt/public/css/fonts/BeVietnamPro-ExtraLight.ttf');
+}
+*{
+    font-family: 'Vietnam';
+  }
+
 html ::-webkit-scrollbar {
+
     width: 10px;
   }
   
@@ -6,10 +15,12 @@ html ::-webkit-scrollbar {
     border-radius: 50px;
     background: #8224AE;
   }
-  
+
   html ::-webkit-scrollbar-track {
     background: #121212;
   }
+
+
 
 #chat-container {
     display: flex;
@@ -22,20 +33,24 @@ html ::-webkit-scrollbar {
     border-radius: 15px;
     overflow: hidden;
     margin-top: 30px;
+    font-family: 'Vietnam';
 }
 
 #name-container {
     padding: 10px;
     background-color: #282a34;
+    font-family: 'Vietnam';
 }
 
 #nameInput {
     display: none;
+    font-family: 'Vietnam';
 }
 
 #messages {
     list-style-type: none;
     padding: 20px;
+    font-family: 'Vietnam';
     margin: 0;
     flex-grow: 1;
     overflow-y: auto;
@@ -277,10 +292,7 @@ h1 {
     font-size: 100%;
     vertical-align: baseline;
 }
-@font-face {
-    font-family: 'Fredoka';
-    src: url('fonts/FredokaOne-Regular.ttf');
-}
+
 body{
     background-color: #2d2f3b;
 }
@@ -324,7 +336,7 @@ body{
 }
 .textchat{
     position: absolute;
-    margin-left: 360px;
+    margin-left: 350px;
     font-size: 20px;
     color: #8224AE;
     z-index: 2;
@@ -345,18 +357,25 @@ body{
     height: 40px;
 }
 .namechat span{
-    margin-left: 10px;
-    margin-top: -250px;
+    margin-left: 50px;
+
+
 
 }
-
+.namechat{
+    margin-top: -45px;
+}
 .boxge{
-    display: flex;
+    display:row;
+    width: 90%;
+
+
 }
 .mensagenl{
     display: block;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 5px;
+    width: 100%;
 }
 .nome{
     color: #8224AE;
@@ -378,6 +397,7 @@ body{
     text-align: left;
     height: 530px;
     border-radius: 10px;
+    margin-top: 20px;
 
 }
 .info{
@@ -388,15 +408,15 @@ body{
         text-align: left;
 }
 .link-postagens>i{
-    margin-left: 15%;
+    margin-left: 14%;
     font-weight: bold;
     margin-right: 5px;
 }
 .link-postagens{
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 17px;
-    color: #646464;
+    font-size: 18px;
+    color: #939393;
     font-family: "Vietnam";
     font-weight: bold;
 }
@@ -425,7 +445,7 @@ body{
     display: flex;
     justify-content: center;
     border-radius: 10px;
-
+    margin-top: 20px;
     bottom: 0;
     right: 0;
     height: 530px;
