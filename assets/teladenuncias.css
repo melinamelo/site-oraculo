@@ -126,47 +126,20 @@ label>img{
     width: 83%;
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    align-items: center;
-} 
-.conteudo-header{
-    margin-right: 20px;
-    display: flex;
-    column-gap: 50px;
-    font-family: sans-serif;
-}
-.search{
-    width: 300px;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: #3b3e4f;
-}
-.link{
-    text-decoration: none;
     color: #8224AE;
-    font-weight: bold;
-    font-family: "Fredoka";
+    font-size: 22px;
 }
-.titulo{
+
+.title {
+    width: 33.33%;
+    height: 10px;
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2D2F3B;
-    height: 100px;
-    position: relative;
+    font-size: 30px;
     color: #8224AE;
-
-
 }
-.linha-pag{
-    height:1px;
-    width: 40%;
-    background-color: #8224AE;
-}
-
 
 .texto-1 {
     width: 80%;
@@ -193,13 +166,12 @@ label>img{
     height: 800px;
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
-    flex-flow: row;
-
+    /* flex-wrap: nowrap;
+    flex-flow: row; */
 }
 
 .box1 {
-    width: 65%;
+    width: 60%;
     height: 100%;
 }
 
@@ -212,15 +184,11 @@ label>img{
 .box2 {
     width: 35%;
     height: 30%;
+    margin-right: 30px;
 }
 
 .form-title h2 {
     margin-top: 70px;
-    font-family: "Fredoka";
-}
-
-.pergunta h2 {
-    font-family: "Fredoka";
 }
 
 .info p {
@@ -256,7 +224,7 @@ label>img{
     height: 40px;
     width: 400px;
     border-bottom: 3px solid #8224AE;
-    background-color: #4A4A4A;
+    background-color: rgba(112, 112, 112, 0.434);
     border-radius: 7px;
     border-top: none;
     border-right: none;
@@ -279,7 +247,6 @@ label>img{
     background-color: #8224AE;
     margin-top: 10px;
     border-radius: 7px;
-    font-family: "Fredoka";
     border: none;
     color: white;
 }
@@ -295,7 +262,6 @@ label>img{
 
 .importante h3 {
     text-align: center;
-    font-family: "Fredoka";
 }
 
 .importante p::before {

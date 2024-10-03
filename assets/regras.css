@@ -1,9 +1,22 @@
+body,
+html,
+main,
+figure,
+section,
+a,
+img,
+div,
+p,
+h1 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+    vertical-align: baseline;
+}
 *{
     margin: 0 auto;
-  
-}
-body{
-    background-color: #2D2F3B;
     font-family: 'Vietnam';
 }
 @font-face {
@@ -14,8 +27,9 @@ body{
     font-family: 'Vietnam';
     src: url('fonts/BeVietnamPro-ExtraLight.ttf');
 }
-
-
+body{
+    background-color: #292b34;
+}
 input[type="checkbox"]{
     display:none;
     margin-top: 20px;
@@ -33,30 +47,29 @@ input[type="checkbox"]:checked ~ label>img{
 label>img{
   width: 40px;  
   position: absolute;
+  z-index: 1;
   transition: all 0.5s;
   margin-top: 25px;
   margin-left: 0px;
-  z-index: 5;
 }
 
-.nav-vertical{
-    background-color: rgb(31, 31, 31);
+nav{
+    background-color: #292929;
     width:300px;  
     height: 100%; 
     position: absolute;  
     left: -300px;
     transition: all 0.5s;
-    z-index: 4;
 }
 
-.nav-vertical>ul{
+nav>ul{
     position: relative;
     top:70px ;
     list-style: none;
     
 }
 
-.nav-vertical>ul>li>a{
+nav>ul>li>a{
     display: block;
     padding:10 20;
     color:#FFF;
@@ -65,8 +78,8 @@ label>img{
     margin-bottom: 15px;
 }
 
-.nav-vertical>ul>li>a:hover{
-    background-color: #2D2F3B;
+nav>ul>li>a:hover{
+    background-color: #292929;
     color:#8224AE;
 }
 .logo{
@@ -75,6 +88,10 @@ label>img{
     margin-left: 15px;
     margin-top: 10px;
 }
+.img-logoFooter img{
+    width: 120px;
+    background-color: #1f1f29;
+}
 .img-logo{
     width:100%
 }
@@ -82,10 +99,11 @@ label>img{
     width: 100%;
     height: 1px;
     background-color: #8B8B8B;
-    margin-top: 380px;
+    margin-top: 390px;
 }
 .account{
     display: flex;
+    margin-top: 10px;
 }
 .perfil{
     width: 50px;
@@ -105,9 +123,7 @@ label>img{
     display: flex;
     width: 100%;
     height: 100px;
-    border-bottom: 1.5px solid #383838;
-    background-color: #22252D;
-    z-index: 3;
+    border-bottom: 1.5px solid #505050;
 }
 .logo-principal{
     width: 12.5%;
@@ -142,19 +158,31 @@ label>img{
     text-decoration: none;
     color: #8224AE;
     font-weight: bold;
-    font-family: "Fredoka";
 }
-.titulo{
-    display: flex;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2D2F3B;
-    height: 100px;
-    position: relative;
-    color: #8224AE;
 
+.box-title{
+    background-color: #8224AE;
+    width: 40%;
+    height: 2px;  
+}
+.box-title-total{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    flex-direction: row;
+    color:#8224AE;
+    font-size: 22px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.title{
+    width: 33.33%;
+    height: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    font-size: 30px;
 
 }
 .linha-pag{
@@ -169,10 +197,9 @@ label>img{
 .title-body{
     color:#8224AE;
    
-   
 }
 .title-body li {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 .all-text-body{
     text-align: justify;
@@ -180,46 +207,81 @@ label>img{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-   
 }
 
 .main-info{
     color: #737373;
+    background-color: #1f1f29;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 10px;
-    background-color: #1F1F29;
 }
 .info{
+    width: 300px;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    background:none
 }
 .info-2{
     display: flex;
     flex-direction: column;
-    padding: 15px;  
-}
-.img-logoFooter img{
-    width: 120px;
+    padding: 15px;
+    background:none
+
 }
 
 .info span{
+    font-size: 12px;
     margin-top: 5px;
+    background-color: #1f1f29;
 }
 
 .info-2 span {
+    font-size: 12px;
     display: flex;
     align-items: center; 
-    text-align: left; 
-    margin-top: 10px; 
+    margin-top: 10px;
+    background-color: #1f1f29; 
 }
 
 .info-2 span i {
-    margin-right: 15px; 
+    margin-right: 12px; 
 }
+.collapsible {
+    background-color: #73018d;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 150px;
 
-
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #9b49c1;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    margin-left: 100px;
+    background-color: #292b34;
+    margin-bottom: 20px;
+  }
+  .text-adv{
+    margin-left: 70px;
+    color: red;
+  }
+  i{
+    background: none;
+    float: right;
+  }
