@@ -286,7 +286,7 @@ h2{
 }
 .text{
     background-color: rgba(171, 171, 171, 0.334);
-    height: 200px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -314,7 +314,7 @@ h2{
 }
 .foto img{
     width: 180px;
-    height: 265px;
+    height: 180px;
     border-radius: 5px;
 }
 .sticky{
