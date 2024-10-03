@@ -277,16 +277,16 @@ h2{
     margin-top: 10px;
 }
 .boxTotal{
-    
+
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   align-items: center;
     gap:10px;
     margin-top: 20px;
 }
 .text{
     background-color: rgba(171, 171, 171, 0.334);
-    height: 200px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -321,7 +321,4 @@ h2{
     position: fixed;
     top: 0;
     width: 100%;
-}
-.mais{
-    color: #8224AE;
 }
