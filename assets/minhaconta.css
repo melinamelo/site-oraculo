@@ -1,0 +1,301 @@
+*{
+    margin: 0 auto;
+  
+}
+body{
+    background-color: #2D2F3B;
+    font-family: 'Vietnam';
+}
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/FredokaOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Vietnam';
+    src: url('fonts/BeVietnamPro-ExtraLight.ttf');
+}
+	
+input[type="checkbox"]{
+    display:none;
+    margin-top: 20px;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(300px);
+}
+
+input[type="checkbox"]:checked ~ label>img{
+    transform: translateX(250px);
+
+}
+
+label>img{
+  width: 40px;  
+  position: absolute;
+  transition: all 0.5s;
+  margin-top: 25px;
+  margin-left: 0px;
+  z-index: 5;
+}
+
+.nav-vertical{
+    background-color: rgb(31, 31, 31);
+    width:300px;  
+    height: 100%; 
+    position: absolute;  
+    left: -300px;
+    transition: all 0.5s;
+    z-index: 4;
+}
+
+.nav-vertical>ul{
+    position: relative;
+    top:70px ;
+    list-style: none;
+    
+}
+
+.nav-vertical>ul>li>a{
+    display: block;
+    padding:10 20;
+    color:#FFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+.nav-vertical>ul>li>a:hover{
+    background-color: #2D2F3B;
+    color:#8224AE;
+}
+.logo{
+    width:200px;
+    height: 100px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.img-logo{
+    width:100%
+}
+.linha{
+    width: 100%;
+    height: 1px;
+    background-color: #8B8B8B;
+    margin-top: 380px;
+}
+.account{
+    display: flex;
+}
+.perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.account span{
+    color: #FFF;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1.5px solid #383838;
+    background-color: #22252D;
+    z-index: 3;
+}
+.logo-principal{
+    width: 12.5%;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.img-principal{
+    width:100%;
+}
+.lado-direito{
+    float: right;
+    width: 83%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+} 
+.conteudo-header{
+    margin-right: 20px;
+    display: flex;
+    column-gap: 50px;
+    font-family: sans-serif;
+}
+.search{
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3b3e4f;
+}
+.link{
+    text-decoration: none;
+    color: #8224AE;
+    font-weight: bold;
+    font-family: "Fredoka";
+}
+.titulo{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d2f3b;
+    height: 100px;
+    position: relative;
+
+}
+.linha-pag{
+    height:1px;
+    width: 40%;
+    background-color: #8224AE;
+}
+h2{
+    color: #7C25AE;
+    font-size: 22px;
+}
+.perfil-box{
+    display: flex;
+    width: 80%;
+    border-radius: none;
+    justify-content:flex-start;
+}
+.info-perfil{
+    display: flex;
+    width: 50%;
+    justify-content:left;
+    align-items: center;
+}
+.img-perfil img{
+    width: 95%;
+    border-radius: 50%;
+}
+.img-perfil{
+    width: 40%;
+}
+.box-right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.info span{
+    color: #8224AE;
+    font-weight: bold;
+}
+.info p {
+    color: white;
+}
+.fake-button{
+    width: 20%;
+    background-color: #282A34;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+}
+.fake-button a{
+    text-decoration: none;
+    color: #8224AE;
+}
+.fake-box{
+    width: 45%;
+}
+.info i{
+    font-size: 16px;
+    color: #8224AE;
+    text-decoration: none;
+    font-weight: bold;
+}
+.graphic{
+    width: 80%;
+    background-color: #282A34;
+    height: 400px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.graphic-comun{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-left: 30px;
+}
+.graphic-subuni{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.grafico-principal{
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #8224AE 70deg, 
+        #4B48F7 0 235deg, 
+        #D713CF 0);
+}
+.grafico-secundario{
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #8224AE 70deg, 
+        #4B48F7 0 235deg, 
+        #D713CF 0);
+}
+h3{
+    margin-bottom: 10px;
+    color: white
+}
+
+.item-legenda{
+    width: 100%;
+    display:flex;
+}
+
+.color{
+    width: 20px;
+    height: 20px;
+    background-color: #0e32ff;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: left;
+}
+
+.legenda{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+.box-color{
+    display: flex;
+    flex-direction: column;
+}
+.legenda-texto{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: start;
+    
+}
+.legenda-texto span{
+    margin-bottom: 5px;
+    width: 100%;
+    color: white;
+}
