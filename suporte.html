@@ -13,7 +13,7 @@
     <header class="header" id="myHeader">
         <input type="checkbox" id="chec" />
         <label for="chec" class="box-chec">
-            <img src="assets/img/menu vertical.png" >
+            <img src="assets/img/menu vertical.png">
         </label>
         <nav class="nav-vertical">
             <figure class="logo">
@@ -26,6 +26,7 @@
                 <li><a href="#">Reportar</a></li>
                 <li><a href="#">Sair</a></li>
             </ul>
+
             <div class="linha"></div>
             <section class="account">
                 <div class="box-perfil">
@@ -40,10 +41,12 @@
         <section class="lado-direito">
             <div class="conteudo-header">
                 <input type="text" class="search" placeholder="Pesquise aqui">
+                <a href="" class="link">Entrar</a>
+                <a href="" class="link">Registrar-se</a>
             </div>
         </section>
     </header>
-	 <section class="titulo">
+    <section class="titulo">
         <div class="linha-pag"></div>
         <h2>Suporte</h2>
         <div class="linha-pag"></div>
@@ -57,68 +60,75 @@
         <div class="title-body-box">
             <span class="title-body">Dúvidas Frequentes(FAQ)</span>
         </div>
-        <div class="text-body">
-            <p>Bem-vindo à página de suporte do Oráculo! Aqui você encontrará respostas para as dúvidas mais frequentes
-                e terá acesso a um chat para tirar suas dúvidas em tempo real.</p>
-        </div>
-        <div class="box-text">
-            <span class="title-text">1. O que é o Oráculo?</span>
+
+        <button type="button" class="collapsible">1. O que é o Oráculo?</button>
+        <div class="content">
             <p class="text-body-box"> O Oráculo é uma plataforma que reúne comunidades focadas em diferentes âmbitos
                 culturais e os mais diversos assuntos, permitindo que usuários participem de discussões sobre livros,
                 músicas, jogos e muito mais.</p>
         </div>
 
-        <div class="box-text">
-            <span class="title-text">2. Como posso criar uma conta no Oráculo?</span>
+        <button type="button" class="collapsible">2. Como posso criar uma conta no Oráculo?</button>
+        <div class="content">
             <p class="text-body-box"> Clique em "Registrar" no canto superior direito da página inicial. Será necessário
                 fornecer um e-mail válido e criar uma senha, dentre outras informações.</p>
         </div>
-        <div class="box-text">
-            <span class="title-text">3. Posso participar de várias comunidades ao mesmo tempo?</span>
+
+        <button type="button" class="collapsible">3. Posso participar de várias comunidades ao mesmo tempo?</button>
+        <div class="content">
             <p class="text-body-box"> Sim! No Oráculo, você pode participar de quantas comunidades desejar, desde que
                 respeite as regras específicas de cada uma.</p>
         </div>
-        <div class="box-text">
-            <span class="title-text">4. Como posso encontrar uma comunidade que me interessa?</span>
+
+        <button type="button" class="collapsible">4. Como posso encontrar uma comunidade que me interessa?</button>
+        <div class="content">
             <p class="text-body-box"> Use a barra de busca na página inicial para procurar comunidades com base nos seus
                 interesses. Você pode buscar por temas, nomes de livros, bandas, jogos e muito mais.</p>
         </div>
-        <div class="box-text">
-            <span class="title-text">5. Como faço para denunciar um comportamento inadequado em uma comunidade?</span>
+
+        <button type="button" class="collapsible">5. Como faço para denunciar um comportamento inadequado em uma
+            comunidade?</button>
+        <div class="content">
             <p class="text-body-box"> Se você presenciar um comportamento inadequado que viole nossas regras, clique na
                 opção de "Reportar" no menu. Nossa equipe analisará a situação e tomará as devidas providências.</p>
         </div>
-        <div class="box-text">
-            <span class="title-text">6. Como posso personalizar meu perfil?</span>
+
+        <button type="button" class="collapsible">6. Como posso personalizar meu perfil?</button>
+        <div class="content">
             <p class="text-body-box"> Acesse seu perfil no canto inferior esquerdo do menu e você poderá editar suas
-                informações pessoais, adicionar uma foto de perfil e personalizar seu nome de usuário.
-            </p>
+                informações pessoais, adicionar uma foto de perfil e personalizar seu nome de usuário.</p>
         </div>
-        <div class="box-text">
-            <span class="title-text">7. O Oráculo é gratuito?</span>
+
+        <button type="button" class="collapsible">7. O Oráculo é gratuito?</button>
+        <div class="content">
             <p class="text-body-box"> Sim, a participação nas comunidades do Oráculo é gratuita. No entanto, algumas
                 funcionalidades ou comunidades exclusivas podem exigir uma assinatura premium.</p>
         </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
     </main>
-    <div class="linha"></div>
-    <div class="text-info">
-        <div class="box-info-title">
-            <span class="info-title">Chat de Suporte</span>
-        </div>
-        <div class="box-info-text">
-            <span class="info-text">
-                Tem alguma dúvida que não foi respondida acima? Utilize o nosso Chat de Suporte para falar diretamente
-                com um de nossos atendentes.
-                [Clique aqui para acessar o Chat]
-            </span>
-        </div>
-    </div>
-    <div class="linha"></div>
     <div class="contato">
-        <span class="info-text">Se precisar de mais ajuda, não hesite em nos contatar através do chat ou pelo e-mail: suporte@oraculo.com.</span>
+        <span class="info-text">Se precisar de mais ajuda, não hesite em nos contatar através do chat ou pelo e-mail:
+            suporte@oraculo.com.</span>
     </div>
 
-    
+
     <footer class="main-info">
         <div class="img-logoFooter">
             <img src="assets/img/4_Sem_Título_20240912103141-removebg-preview.png" alt="">
@@ -132,10 +142,10 @@
             <span>Suporte</span>
         </div>
         <div class="info-2">
-                <span><i class="bi bi-info-circle"></i> Sobre Nós</span>
-                <span><i class="bi bi-telephone"></i> Contato</span>
-                <span><i class="bi bi-instagram"></i> Istagram</span>
-                
+            <span><i class="bi bi-info-circle"></i> Sobre Nós</span>
+            <span><i class="bi bi-telephone"></i> Contato</span>
+            <span><i class="bi bi-instagram"></i> Istagram</span>
+
         </div>
     </footer>
 
