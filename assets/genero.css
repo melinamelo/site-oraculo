@@ -1,10 +1,22 @@
-*{
-    margin: 0 auto;
-  
+body,
+html,
+main,
+figure,
+section,
+a,
+img,
+div,
+p,
+h1 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+    vertical-align: baseline;
 }
-body{
-    background-color: #2D2F3B;
-    font-family: 'Vietnam';
+html{
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: 'Fredoka';
@@ -13,6 +25,9 @@ body{
 @font-face {
     font-family: 'Vietnam';
     src: url('fonts/BeVietnamPro-ExtraLight.ttf');
+}
+body{
+    background-color: #2d2f3b;
 }
 input[type="checkbox"]{
     display:none;
@@ -38,7 +53,7 @@ label>img{
 }
 
 .nav-vertical{
-    background-color: rgb(31, 31, 31);
+    background-color: #2d2f3b;;
     width:300px;  
     height: 100%; 
     position: absolute;  
@@ -64,7 +79,7 @@ label>img{
 }
 
 .nav-vertical>ul>li>a:hover{
-    background-color: #2D2F3B;
+    background-color: #2d2f3b;
     color:#8224AE;
 }
 .logo{
@@ -134,7 +149,7 @@ label>img{
     padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: #3b3e4f;
+    background-color: #2d2d2d;
 }
 .link{
     text-decoration: none;
@@ -142,17 +157,20 @@ label>img{
     font-weight: bold;
     font-family: "Fredoka";
 }
+.principal{
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+}
 .titulo{
     display: flex;
     width: 100%;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    background-color: #2D2F3B;
+    background-color: #2d2f3b;
     height: 100px;
     position: relative;
-    color: #8224AE;
-
 
 }
 .linha-pag{
@@ -160,72 +178,115 @@ label>img{
     width: 40%;
     background-color: #8224AE;
 }
-
-.titulo{
+h2{
+    color: #7C25AE;
+    font-family: "Fredoka";
+    font-size: 22px;
+}
+.box-tudo{
     display: flex;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2D2F3B;
-    height: 100px;
-    position: relative;
-    color: #8224AE;
-
-
+    margin-top: 50px;
 }
-.linha-pag{
-    height:1px;
+.box-info{
+    background-color: #262932;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 530px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    z-index: 1;
+}
+.box-info2{
+    background-color: #262932;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 530px;
+}
+.timeline{
     width: 40%;
-    background-color: #8224AE;
-}
+    margin: 0 auto;
 
-.all-text{
-    width: 80%;
-    text-align: justify;
-    margin-top: 100px;
-    color: white;
 }
-
-.text{
+.link-postagens>i{
+    margin-left: 15%;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.link-postagens{
     margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #646464;
+    font-family: "Vietnam";
+    font-weight: bold;
 }
+.link-info{
+    margin-top: 250px;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #646464;
+    margin-left: 15%;
 
-.main-info{
-    color: #737373;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-    background-color: #1F1F29;
+    font-family: "Vietnam";
 }
 .info{
+    margin-top: 50px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    text-align: left;
 }
-.info-2{
+.comunidade-info{
+    margin-top: 180px;
+    margin-bottom: 30px;
+}
+.sub-comunidade select {
+    margin-top: 40px;
+    width: 210px;
+    background: none;
+    color: #646464;
+    border: none;
+    border-radius: 2px;
+    padding: 9px 9px;
+    background-color: #2d2f3b;
+    font-family: "Vietnam";
+    font-size: 17px;
+    font-weight: bold;
+}
+.header-nav option {
+    background-color: #2d2f3b;
+    color: white;
+    border: none;
+    font-weight: bold;  
+}
+
+.caixa{
+    width: 100%;
+    height: 80px;
     display: flex;
-    flex-direction: column;
-    padding: 15px;  
+    justify-content: space-evenly;
+    margin-top: 30px;
 }
-.img-logoFooter img{
-    width: 120px;
-}
-
-.info span{
-    margin-top: 5px;
-}
-
-.info-2 span {
+.info-caixa{
+    width: 30%;
+    height: 55px;
+    border-radius: 7px;
+    border: 2px solid #7C25AE;
     display: flex;
     align-items: center; 
-    text-align: left; 
-    margin-top: 10px; 
+    justify-content: center;
 }
-
-.info-2 span i {
-    margin-right: 15px; 
+.info-caixa span{
+    font-family: "Vietnam";
+    color: white;
 }

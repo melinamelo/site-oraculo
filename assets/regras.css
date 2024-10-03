@@ -185,6 +185,11 @@ nav>ul>li>a:hover{
     font-size: 30px;
 
 }
+.linha-pag{
+    height:1px;
+    width: 40%;
+    background-color: #8224AE;
+}
 .text-body{
     color:white;
     margin-top: 15px;
