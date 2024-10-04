@@ -2,6 +2,10 @@
     font-family: 'Vietnam';
     src: url('/chatt/public/css/fonts/BeVietnamPro-ExtraLight.ttf');
 }
+@font-face {
+    font-family: 'Vietnam';
+    src: url('./fonts/BeVietnamPro-ExtraLight.ttf');
+}
 *{
     font-family: 'Vietnam';
   }
