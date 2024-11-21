@@ -3,7 +3,7 @@
   
 }
 body{
-    background-color: #2D2F3B;
+    background-color: #ffffff;
     font-family: 'Vietnam';
 }
 @font-face {
@@ -12,9 +12,8 @@ body{
 }
 @font-face {
     font-family: 'Vietnam';
-    src: url('fonts/BeVietnamPro-ExtraLight.ttf');
+    src: url('.././fonts/BeVietnamPro-ExtraLight.ttf');
 }
-
 input[type="checkbox"]{
     display:none;
     margin-top: 20px;
@@ -39,7 +38,7 @@ label>img{
 }
 
 .nav-vertical{
-    background-color: rgb(31, 31, 31);
+    background-color: #8224AE;
     width:300px;  
     height: 100%; 
     position: absolute;  
@@ -65,8 +64,8 @@ label>img{
 }
 
 .nav-vertical>ul>li>a:hover{
-    background-color: #2D2F3B;
-    color:#8224AE;
+    background-color: #a656cb;
+    color:#ffffff;
 }
 .logo{
     width:200px;
@@ -104,8 +103,8 @@ label>img{
     display: flex;
     width: 100%;
     height: 100px;
-    border-bottom: 1.5px solid #383838;
-    background-color: #22252D;
+    border-bottom: 1.5px solid #ffffff;
+    background-color: #8224AE;
     z-index: 3;
 }
 .logo-principal{
@@ -135,7 +134,7 @@ label>img{
     padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: #3b3e4f;
+    background-color: #f4dcff;
 }
 .link{
     text-decoration: none;
@@ -149,7 +148,7 @@ label>img{
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    background-color: #2D2F3B;
+    background-color: #ffffff;
     height: 100px;
     position: relative;
     color: #8224AE;
@@ -158,7 +157,26 @@ label>img{
 }
 .linha-pag{
     height:1px;
-    width: 40%;
+    width: 35%;
+    background-color: #8224AE;
+}
+
+.titulo{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 100px;
+    position: relative;
+    color: #8224AE;
+
+
+}
+.linha-pag{
+    height:1px;
+    width: 35%;
     background-color: #8224AE;
 }
 
@@ -166,7 +184,9 @@ label>img{
     width: 80%;
     text-align: justify;
     margin-top: 100px;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Vietnam';
 }
 
 .text{
@@ -174,14 +194,14 @@ label>img{
 }
 
 .main-info{
-    color: #737373;
+    color: #767676;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
-    background-color: #1F1F29;
+    background-color: #d8d8d8;
 }
 .info{
     display: flex;

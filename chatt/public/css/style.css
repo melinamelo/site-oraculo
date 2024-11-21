@@ -1,4 +1,17 @@
+@font-face {
+    font-family: 'Vietnam';
+    src: url('/chatt/public/css/fonts/BeVietnamPro-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Vietnam';
+    src: url('./fonts/BeVietnamPro-ExtraLight.ttf');
+}
+*{
+    font-family: 'Vietnam';
+  }
+
 html ::-webkit-scrollbar {
+
     width: 10px;
   }
   
@@ -6,10 +19,12 @@ html ::-webkit-scrollbar {
     border-radius: 50px;
     background: #8224AE;
   }
-  
+
   html ::-webkit-scrollbar-track {
-    background: #121212;
+    background: #ffffff;
   }
+
+
 
 #chat-container {
     display: flex;
@@ -18,28 +33,32 @@ html ::-webkit-scrollbar {
     width: 100%;
     max-width: 840px;
     height: 70vh;
-    background-color: #151515 ;
+    background-color: #ffffff ;
     border-radius: 15px;
     overflow: hidden;
     margin-top: 30px;
+    font-family: 'Vietnam';
 }
 
 #name-container {
     padding: 10px;
-    background-color: #282a34;
+    background-color: #eaeaea;
+    font-family: 'Vietnam';
 }
 
 #nameInput {
     display: none;
+    font-family: 'Vietnam';
 }
 
 #messages {
     list-style-type: none;
     padding: 20px;
+    font-family: 'Vietnam';
     margin: 0;
     flex-grow: 1;
     overflow-y: auto;
-    background-color: #282a34;
+    background-color: #eaeaea;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -48,7 +67,7 @@ html ::-webkit-scrollbar {
 #messages li {
     padding: 10px;
     border-radius: 10px;
-    background-color: #212121;
+    background-color: #eaeaea;
     color: #9F9F9F;
     max-width: 70%;
     word-wrap: break-word;
@@ -59,7 +78,7 @@ html ::-webkit-scrollbar {
 #chat-form {
     display: flex;
     padding: 10px;
-    background-color: #282a34;
+    background-color: #eaeaea;
 }
 
 #input {
@@ -67,14 +86,14 @@ html ::-webkit-scrollbar {
     border: none;
     border-radius: 8px;
     flex: 1;
-    background-color: #2f3136;
+    background-color: #dadada;
     color: #9F9F9F;
     font-size: 16px;
 }
 
 #chat-form button {
     position: absolute;
-    background-color: #2f3136;
+    background-color: #8224AE;
     border: none;
     top: 669px;
     width: 48px;
@@ -150,10 +169,11 @@ label>img{
   margin-top: 25px;
   margin-left: 0px;
   z-index: 5;
+  color: black;
 }
 
 .nav-vertical{
-    background-color: rgb(31, 31, 31);
+    background-color: #8224AE;
     width:300px;  
     height: 100%; 
     position: absolute;  
@@ -172,15 +192,15 @@ label>img{
 .nav-vertical>ul>li>a{
     display: block;
     padding:10 20;
-    color:#FFF;
+    color:#ffffff;
     text-decoration: none;
     font-family: sans-serif;
     margin-bottom: 15px;
 }
 
 .nav-vertical>ul>li>a:hover{
-    background-color: rgb(18, 18, 18);
-    color:#8224AE;
+    background-color: #a656cb;
+    color:#ffffff;
 }
 .logo{
     width:200px;
@@ -218,13 +238,12 @@ label>img{
     display: flex;
     width: 100%;
     height: 100px;
-    border-bottom: 1.5px solid #383838;
-    background-color:#22252D ;
+    border-bottom: 1.5px solid #b0b0b0;
+    background-color:#8224AE ;
     z-index: 3;
 }
 .logo-principal{
     width: 12.5%;
-    margin-top: 5px;
     margin-left: 50px;
 }
 .img-principal{
@@ -249,7 +268,7 @@ label>img{
     padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: #3b3e4f;
+    background-color: #f4dcff;
 }
 .link{
     text-decoration: none;
@@ -277,19 +296,16 @@ h1 {
     font-size: 100%;
     vertical-align: baseline;
 }
-@font-face {
-    font-family: 'Fredoka';
-    src: url('fonts/FredokaOne-Regular.ttf');
-}
+
 body{
-    background-color: #2d2f3b;
+    background-color: #ffffff;
 }
 
 /* linha lyaout */
 .info-comunidade{
     width: 300px;
     height: 550px;
-    background-color: #282a34;
+    background-color: #e0e0e0;
     border-radius: 10px;
 }
 .box-infoCom{
@@ -324,7 +340,7 @@ body{
 }
 .textchat{
     position: absolute;
-    margin-left: 360px;
+    margin-left: 350px;
     font-size: 20px;
     color: #8224AE;
     z-index: 2;
@@ -345,18 +361,25 @@ body{
     height: 40px;
 }
 .namechat span{
-    margin-left: 10px;
-    margin-top: -250px;
+    margin-left: 50px;
+
+
 
 }
-
+.namechat{
+    margin-top: -45px;
+}
 .boxge{
-    display: flex;
+    display:row;
+    width: 90%;
+
+
 }
 .mensagenl{
     display: block;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 5px;
+    width: 100%;
 }
 .nome{
     color: #8224AE;
@@ -367,17 +390,15 @@ body{
 
 
 
-
-
-
 .box-info{
-    background-color: #282a34;
+    background-color: #e0e0e0;
     width: 20%;
     display: flex;
     flex-direction: column;
     text-align: left;
     height: 530px;
     border-radius: 10px;
+    margin-top: 20px;
 
 }
 .info{
@@ -388,15 +409,15 @@ body{
         text-align: left;
 }
 .link-postagens>i{
-    margin-left: 15%;
+    margin-left: 14%;
     font-weight: bold;
     margin-right: 5px;
 }
 .link-postagens{
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 17px;
-    color: #646464;
+    font-size: 18px;
+    color: #939393;
     font-family: "Vietnam";
     font-weight: bold;
 }
@@ -414,18 +435,18 @@ body{
     border: none;   
     border-radius: 2px;
     padding: 9px 9px;
-    background-color: #282a34;
+    background-color: #e0e0e0;
     font-family: "Vietnam";
     font-size: 17px;
     font-weight: bold;
 }
 .box-info2{
-    background-color: #282a34;
+    background-color: #e0e0e0;
     width: 300px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
-
+    margin-top: 20px;
     bottom: 0;
     right: 0;
     height: 530px;

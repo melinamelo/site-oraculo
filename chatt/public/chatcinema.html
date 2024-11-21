@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="assets/img/logoOlho.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
 </head>
 <body>
@@ -18,10 +19,15 @@
                 <img src="img/logo3.png" alt="logo" class="img-logo">
             </figure>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="chatt/public/chatlivro.html">Comunidade de Livros</a>
+                <li><a href="chatt/public/chatmusica.html">Comunidade de Músicas</a>
+                <li><a href="chatt/public/chatjogos.html">Comunidade de Jogos</a>
+                <li><a href="chatt/public/chatcinema.html">Comunidade de Cinema</a>
+                <li><a href="chatt/public/chatmariafifi.html">Comunidade Maria fifi</a>
+                <li><a href="../../suporte.html">Suporte</a></li>
+                <li><a href="../../teladenuncias.html">Reportar</a></li>
+                <li><a href="../../login.html">Sair</a></li>
             </ul>
             <div class="linha"></div>
             <section class="account">
@@ -50,15 +56,15 @@
     <section class="box-infoCom">
         <section class="box-info">
             <div class="info">
-                <a href="postagemlivro.html" class="link-postagens"><i class="bi bi-send"></i> Postagens</a>
-                <a href="" class="link-postagens"><i class="bi bi-chat-text"></i> Livros mais comentados</a>
+                <a href="../../postagemcinema.html" class="link-postagens"><i class="bi bi-send"></i> Postagens</a>
+                <a href="../../maisComentadosCinema.html" class="link-postagens"><i class="bi bi-chat-text"></i> Filmes mais comentados</a>
                 <a href="" class="link-postagens"><i class="bi bi-camera-reels  "></i> Produtoras</a>
-                <a href="" class="link-postagens"><i class="bi bi-journal-text"></i> Gêneros</a>
-                <a href="" class="link-postagens"><i class="bi bi-calendar2-date"></i> Eventos</a>
-                <a href="" class="link-postagens"><i class="bi bi-globe"></i> Novidades</a>
-                <a href="" class="link-postagens"><i class="bi bi-rulers"></i> Regras</a>
-                <a href="" class="link-postagens"><i class="bi bi-ban"></i> Denúncias</a>
-                <a href="" class="link-postagens"><i class="bi bi-info-circle"></i> Sobre essa comunidade</a>                </div>
+                <a href="../../genero-cinema.html" class="link-postagens"><i class="bi bi-journal-text"></i> Gêneros</a>
+                <a href="../../eventoscinema.html" class="link-postagens"><i class="bi bi-calendar2-date"></i> Eventos</a>
+                <a href="../../novidadesCinema.html" class="link-postagens"><i class="bi bi-globe"></i> Novidades</a>
+                <a href="../../regras.html" class="link-postagens"><i class="bi bi-rulers"></i> Regras</a>
+                <a href="../../teladenuncias.html" class="link-postagens"><i class="bi bi-ban"></i> Denúncias</a>
+                <a href="../../sncinema.html" class="link-postagens"><i class="bi bi-info-circle"></i> Sobre essa comunidade</a>                </div>
         </section>
         <div style="width: 50px;">
 
@@ -232,7 +238,7 @@
                                 <div>${profileImage}</div>
                                 <div class="namechat">
                                     <span class="nome">${name}</span>
-                                    <div class="mensagenl">${message}</div>
+                                    <div class="mensagenl"><span>${message}</span></div>
                                 </div>
                             </div>`;
         messagesList.appendChild(item);
